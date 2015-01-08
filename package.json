@@ -1,0 +1,19 @@
+{
+  "name": "ucdd-lodash",
+  "version": "1.0.0",
+  "description": "UCDD2 class's own lodash implementation",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "debug": "^2.1.1",
+    "lodash": "^2.4.1"
+  }
+}
