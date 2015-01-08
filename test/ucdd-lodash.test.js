@@ -44,14 +44,30 @@ function test_rest() {
     test("_.rest([])")    
 }
 
+function test_indexOf() {
+	test("_.indexOf([1, 2, 3, 1, 2, 3], 2)")
+	test("_.indexOf([1, 2, 3, 1, 2, 3], 3)")
+}
+
+function test_compact() {
+	test("_.compact([0, 1, false, 2, '', 3, undefined])")
+	test("_.compact([0, 1, 2])")
+}
+
+function test_without() {
+	test("_.without([1, 2, 1, 0, 3, 1, 4], 0, 1)")
+	test("_.without(['good','good','bad','good'], 'bad')")	
+}
+
+
 function test_pluck() {
     test("_.pluck(users, 'age')")
     test("_.pluck(users, 'user')")
 }
 
-
-
-
 test_first()
 test_rest()
+test_indexOf()
+test_without()
+test_compact()
 test_pluck()
