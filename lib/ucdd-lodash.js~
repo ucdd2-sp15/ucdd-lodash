@@ -25,7 +25,12 @@ function first(array) {
  * // => [2, 3]
  */
 function rest(array) {
-   return "not yet implemented"
+   if(array.length === 0)
+	return undefined
+   else {
+   array.shift();
+   return array
+}
 }
 
 /**
